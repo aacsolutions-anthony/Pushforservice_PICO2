@@ -1,4 +1,8 @@
-# Instructions
+# Instructions for configuring software on the PICO W for push service
+
+![image](https://github.com/aacsolutions-anthony/Pushforservice_PICO2/assets/131961269/999eb655-1ae0-4f65-ac30-e258102ee683)
+
+**AAC Solutions Anthony Grace** 
 
 ## Introduction:
 
@@ -82,16 +86,16 @@ Step 1: Install the Firmware
 wget https://micropython.org/resources/firmware/rp2-pico-2022-02-16-v1.18.uf2
 ```
 
-    Be sure to Replace the URL with the latest MicroPython firmware for the Raspberry Pi Pico W.
-    Connect the Pico W to your computer via USB and put it into DFU mode. Once connected, the Pico W will appear as a mass storage device named RPI-RP2.
-    Move the firmware file to the Pico W:
+Be sure to Replace the URL with the latest MicroPython firmware for the Raspberry Pi Pico W.
+Connect the Pico W to your computer via USB and put it into DFU mode. Once connected, the Pico W will appear as a mass storage device named RPI-RP2.
+Move the firmware file to the Pico W:
 
 ```
 mv rp2-pico-2022-02-16-v1.18.uf2 /media/your_username/RPI-RP2
 ```
 
-    Replace 'your_username' with your actual username. Or the path to the PICO
-    Ofcourse your system could be different so double check the path with lsblk
+Replace 'your_username' with your actual username. Or the path to the PICO
+Ofcourse your system could be different so double check the path with lsblk
 
 ```
 lsblk
@@ -101,7 +105,7 @@ Step 2: Download Your Python Code
 
 * If the Python code is on a GitHub repository, you can download it directly to your Raspberry Pi using git clone:
 
-        Although this should be shared in the teams chat or over email in a compressed tarball.
+Although this should be shared in the teams chat or over email in a compressed tarball.
 
 ```
 tar -xvf PICOTARBALL.tar.gz
